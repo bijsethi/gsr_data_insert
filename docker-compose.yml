@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  db:
+    image: postgres:latest
+    container_name: postgres_con
+    restart: always
+    ports:
+      - 5433:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Postgres@123
+      - POSTGRES_DB=postgres
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+
