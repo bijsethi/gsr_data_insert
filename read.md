@@ -1,0 +1,1 @@
+python main.py "2023-07-01" "2023-07-15" "connection,app,platform,country,date"
